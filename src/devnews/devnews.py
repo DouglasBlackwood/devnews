@@ -1,4 +1,7 @@
 from threading import Thread
+from dataclasses import dataclass
+from datetime import datetime
+from time import mktime
 
 import feedparser
 
@@ -7,7 +10,7 @@ URLS = (
     "http://hackaday.com/feed/",
     "http://news.ycombinator.com/rss",
     "http://rss.slashdot.org/Slashdot/slashdot",
-    "http://www.dzone.com/links/feed/frontpage/rss.xml",
+    "http://feeds.dzone.com/home",
     "http://www.engadget.com/rss.xml",
     "http://www.reddit.com/r/gaming/.rss",
     "http://www.reddit.com/r/geek/.rss",
@@ -44,11 +47,33 @@ class FeedParserThread(Thread):
 
     def run(self):
         feed = feedparser.parse(self.url)
-        # feed_name = feed.feed.title
+        try:
+            feed_name = feed.feed.title
+        except AttributeError as e:
+            print(e, self.url, feed.feed)
 
-        for article in feed.entries:
-            self.news.append(article)
+        for entry in feed.entries:
+            feed_entry = FeedEntry(
+                feed_name,
+                entry.title,
+                entry.link,
+                entry.description,
+                datetime.fromtimestamp(mktime(entry.updated_parsed)),
+            )
+            self.news.append(feed_entry)
+
+
+@dataclass
+class FeedEntry:
+    feed_name: str
+    title: str
+    link: str
+    description: str
+    updated_at: datetime
+
+    def __repr__(self):
+        return f"{self.feed_name}: {self.title}"
 
 
 if __name__ == "__main__":
-    get_news()
+    news = get_news()

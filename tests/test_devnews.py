@@ -1,7 +1,7 @@
 import warnings
 
 from devnews import __version__
-from devnews.devnews import get_news
+from devnews.devnews import get_news, FeedEntry
 
 
 def test_version():
@@ -17,3 +17,4 @@ def test_main():
         news = get_news()
 
     assert len(news) > 0
+    assert type(news[0]) == FeedEntry

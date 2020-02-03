@@ -1,5 +1,7 @@
+import warnings
+
 from devnews import __version__
-from devnews.devnews import main
+from devnews.devnews import get_news
 
 
 def test_version():
@@ -7,4 +9,11 @@ def test_version():
 
 
 def test_main():
-    main()
+    with warnings.catch_warnings():
+        # Désactive temporairement les DeprecationWarnings émit par la lib
+        # tierce feedparser
+        warnings.simplefilter("ignore")
+
+        news = get_news()
+
+    assert len(news) > 0

@@ -4,6 +4,7 @@ from datetime import datetime
 from time import mktime
 
 import feedparser
+from terminaltables import SingleTable
 
 URLS = (
     "http://feeds.wired.com/wired/index",
@@ -75,5 +76,13 @@ class FeedEntry:
         return f"{self.feed_name}: {self.title}"
 
 
+def print_table(news):
+    data = [(entry.feed_name, entry.title) for entry in news[:10]]
+    data.insert(0, ("Feed", "Title"))
+    table = SingleTable(data)
+    print(table.table)
+
+
 if __name__ == "__main__":
     news = get_news()
+    print_table(news)

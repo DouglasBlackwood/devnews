@@ -1,10 +1,11 @@
 from threading import Thread
-from dataclasses import dataclass
 from datetime import datetime
 from time import mktime
 
 import feedparser
 from terminaltables import SingleTable
+
+from devnews.entities import FeedEntry
 
 URLS = (
     "http://feeds.wired.com/wired/index",
@@ -52,6 +53,7 @@ class FeedParserThread(Thread):
             feed_name = feed.feed.title
         except AttributeError as e:
             print(e, self.url, feed.feed)
+            raise
 
         for entry in feed.entries:
             feed_entry = FeedEntry(
@@ -62,18 +64,6 @@ class FeedParserThread(Thread):
                 datetime.fromtimestamp(mktime(entry.updated_parsed)),
             )
             self.news.append(feed_entry)
-
-
-@dataclass
-class FeedEntry:
-    feed_name: str
-    title: str
-    link: str
-    description: str
-    updated_at: datetime
-
-    def __repr__(self):
-        return f"{self.feed_name}: {self.title}"
 
 
 def print_table(news):

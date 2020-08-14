@@ -1,11 +1,7 @@
 import warnings
 
-from devnews import __version__
-from devnews.devnews import get_news, FeedEntry
-
-
-def test_version():
-    assert __version__ == "0.1.0"
+from devnews.devnews import get_news
+from devnews.entities import Article
 
 
 def test_main():
@@ -17,4 +13,4 @@ def test_main():
         news = get_news()
 
     assert len(news) > 0
-    assert type(news[0]) == FeedEntry
+    assert type(news[0]) == Article

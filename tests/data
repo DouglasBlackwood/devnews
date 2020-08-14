@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Hackaday</title>
+	<atom:link href="https://hackaday.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://hackaday.com</link>
+	<description>Fresh hacks every day</description>
+	<lastBuildDate>Thu, 13 Aug 2020 22:03:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.2</generator>
+<site xmlns="com-wordpress:feed-additions:1">156670177</site>	<item>
+		<title>Moving Fridge Magnets Make for Unique Clock</title>
+		<link>https://hackaday.com/2020/08/14/moving-fridge-magnets-make-for-unique-clock/</link>
+					<comments>https://hackaday.com/2020/08/14/moving-fridge-magnets-make-for-unique-clock/#comments</comments>
+		
+		<dc:creator><![CDATA[Dan Maloney]]></dc:creator>
+		<pubDate>Fri, 14 Aug 2020 08:00:00 +0000</pubDate>
+				<category><![CDATA[clock hacks]]></category>
+		<category><![CDATA[clock]]></category>
+		<category><![CDATA[CoreXY]]></category>
+		<category><![CDATA[fridge]]></category>
+		<category><![CDATA[fridge magnet]]></category>
+		<category><![CDATA[servo]]></category>
+		<category><![CDATA[stepper]]></category>
+		<category><![CDATA[word clock]]></category>
+		<guid isPermaLink="false">https://hackaday.com/?p=426305</guid>
+
+					<description><![CDATA[<p>We see a ton of clock projects around these parts, and being hackers, we love to feature them all. But every once in a while we stumble upon a great new way to display the time that really gets our attention and requires a closer look, such as this moving  <a href="https://hackaday.com/2020/08/14/moving-fridge-magnets-make-for-unique-clock/" class="read_more">&#8230;read more</a></p>]]></description>
+										<content:encoded><![CDATA[<p>We see a ton of clock projects around these parts, and being hackers, we love to feature them all. But every once in a while we stumble upon a great new way to display the time that really gets our attention and requires a closer look, such as <a href="https://hackaday.io/project/174246-refrigerator-magnet-clock" target="_blank">this moving fridge magnet clock</a>.</p>
+<p>The fridge magnets [Craig Colvin] built this unique clock around are the colorful plastic kinds that have adorned the lower regions of refrigerators in toddler-filled households for ages. Instead of residing on a fridge, [Craig] laminated a sheet of white acrylic to a thin sheet of steel, to give the magnets something to hold onto. Moving the numbers is the job of <a href="https://hackaday.com/2019/11/12/core-xy-explained/">a CoreXY-style mechanism</a>. The belt-driven Cartesian movement maneuvers a head to to the right location to pick up a number; a servo in the head moves two powerful magnets into position under the number. The head then moves the number to the right spot, releases its magnets, and the number stays put on the board. You can see it in action in the video after the break.</p>
+<p>While we love this as it is, it brings to mind some great mods. One can imagine the addition of letters to make a legit word clock, or to just add a calendar display. We&#8217;d also love to see these magnets in their natural habitat by building this into the door of a working fridge.</p>
+<p><span id="more-426305"></span></p>
+<p><iframe class='youtube-player' width='800' height='480' src='https://www.youtube.com/embed/44xDIPF6VM8?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://hackaday.com/2020/08/14/moving-fridge-magnets-make-for-unique-clock/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">426305</post-id>	</item>
+		<item>
+		<title>PIC32 DMA is a Weird Machine</title>
+		<link>https://hackaday.com/2020/08/13/pic32-dma-is-a-weird-machine/</link>
+					<comments>https://hackaday.com/2020/08/13/pic32-dma-is-a-weird-machine/#comments</comments>
+		
+		<dc:creator><![CDATA[Elliot Williams]]></dc:creator>
+		<pubDate>Fri, 14 Aug 2020 05:01:11 +0000</pubDate>
+				<category><![CDATA[Microcontrollers]]></category>
+		<category><![CDATA[bruce land]]></category>
+		<category><![CDATA[dma]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[pic32]]></category>
+		<category><![CDATA[run dma]]></category>
+		<category><![CDATA[weird machine]]></category>
+		<guid isPermaLink="false">https://hackaday.com/?p=426890&#038;preview=true&#038;preview_id=426890</guid>
+
+					<description><![CDATA[<p>Direct memory access (DMA) systems in computers are more powerful than you might think, and [Bruce Land] and [Joseph Primmer] have done some clever hacking to take full advantage of this on the PIC32 microcontrollers. This is a cool proof-of-concept hack &#8212; you can do general computing in the DMA  <a href="https://hackaday.com/2020/08/13/pic32-dma-is-a-weird-machine/" class="read_more">&#8230;read more</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Direct memory access (DMA) systems in computers are more powerful than you might think, and [Bruce Land] and [Joseph Primmer] have done some clever hacking to <a href="https://people.ece.cornell.edu/land/courses/ece4760/PIC32/index_DMA_weird_machine.html" target="_blank">take full advantage of this on the PIC32 microcontrollers</a>. This is a cool proof-of-concept hack &#8212; you can do general computing in the DMA subsystem without using the CPU at all if you don&#8217;t mind taking your time &#8212; but they also include two useful examples: a direct digital synthesis machine and a random number generator. Both of these run using exactly 0% CPU time.</p>
+<p>How do they do it? DMA is a mechanism for shuttling data around in memory or between hardware peripherals without involving the CPU. Say you want to take a large block of memory containing music, and spit it out slowly to an I2S audio converter. A DMA subsystem could be configured to take an interrupt from the sound chip, pass it a chunk of data, increment the data pointer, and wait for the next interrupt.</p>
+<p>The gimmick, which goes back at least to [Rushanan] and [Checkoway]&#8217;s <a href="https://www.usenix.org/system/files/conference/woot15/woot15-paper-rushanan.pdf" target="_blank">&#8220;Run DMA&#8221; paper</a>, is that you can modify the memory source and destination addresses of one DMA service from another DMA service, and that some registers automatically perform mathematical operations on whatever data is put into them. Combine these together, and you&#8217;ve got <a href="https://en.wikipedia.org/wiki/Transport_triggered_architecture" target="_blank">transport-triggered programming</a>.</p>
+<p>(An awesome side-note: our own [Al Williams] developed a one-instruction transport-triggered CPU way back in the day: the <a href="https://www.drdobbs.com/embedded-systems/the-one-instruction-wonder/221800122?pgno=1" target="_blank">One Instruction Wonder</a>.)</p>
+<p>What is this good for? Writing simple helper applications that run independent of the CPU on a PIC32 microcontroller. [Land] and [Primmer]&#8217;s direct-digital synthesis example is a great one. But there are a lot of cases where you simply want to take in some new data and pre-process it a little bit before it enters the main program flow. While creating weird machines in the DMA engine might be a slower way to get it done, it keeps the CPU free for doing other stuff. We&#8217;re sure you&#8217;ll come up with something.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://hackaday.com/2020/08/13/pic32-dma-is-a-weird-machine/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">426890</post-id>	</item>
+		<item>
+		<title>Automatic Cat Weighing Machine Knows Which Pet It is Feeding</title>
+		<link>https://hackaday.com/2020/08/13/automatic-cat-weighing-machine-knows-which-pet-it-is-feeding/</link>
+					<comments>https://hackaday.com/2020/08/13/automatic-cat-weighing-machine-knows-which-pet-it-is-feeding/#comments</comments>
+		
+		<dc:creator><![CDATA[Jenny List]]></dc:creator>
+		<pubDate>Fri, 14 Aug 2020 02:01:17 +0000</pubDate>
+				<category><![CDATA[home hacks]]></category>
+		<category><![CDATA[cat]]></category>
+		<category><![CDATA[cat food]]></category>
+		<category><![CDATA[feline]]></category>
+		<guid isPermaLink="false">https://hackaday.com/?p=425431</guid>
+
+					<description><![CDATA[<p>Have you ever tried to weigh a cat? For that matter, have you ever tried to get a cat to do <em>anything</em> they don&#8217;t want to do? The wilful independence of our feline companions is a large part of what endears them to us, and must have done ever since  <a href="https://hackaday.com/2020/08/13/automatic-cat-weighing-machine-knows-which-pet-it-is-feeding/" class="read_more">&#8230;read more</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Have you ever tried to weigh a cat? For that matter, have you ever tried to get a cat to do <em>anything</em> they don&#8217;t want to do? The wilful independence of our feline companions is a large part of what endears them to us, and must have done ever since the ancient Egyptians first had a hybrid wildcat that became domesticated</p>
+<p>No wonder it&#8217;s so hard to care for multiple cats with different dietary needs. But the mere act of weighing the cats just might be the key to automating their diets while giving them the choice of when they want to eat. It&#8217;s a task that [Psy0rz] has cracked with <a href="https://github.com/psy0rz/meowton/wiki" target="_blank">the Meowton, a weighing machine/feeder combo</a> designed to regulate the diets of his various moggies.</p>
+<figure id="attachment_426935" aria-describedby="caption-attachment-426935" style="width: 400px" class="wp-caption alignright"><img data-attachment-id="426935" data-permalink="https://hackaday.com/2020/08/13/automatic-cat-weighing-machine-knows-which-pet-it-is-feeding/cat-scale/" data-orig-file="https://hackaday.com/wp-content/uploads/2020/08/cat-scale.jpg" data-orig-size="628,353" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="cat-scale" data-image-description="" data-medium-file="https://hackaday.com/wp-content/uploads/2020/08/cat-scale.jpg?w=400" data-large-file="https://hackaday.com/wp-content/uploads/2020/08/cat-scale.jpg?w=628" class="size-medium wp-image-426935" src="https://hackaday.com/wp-content/uploads/2020/08/cat-scale.jpg?w=400" alt="" width="400" height="225" srcset="https://hackaday.com/wp-content/uploads/2020/08/cat-scale.jpg 628w, https://hackaday.com/wp-content/uploads/2020/08/cat-scale.jpg?resize=250,141 250w, https://hackaday.com/wp-content/uploads/2020/08/cat-scale.jpg?resize=400,225 400w" sizes="(max-width: 400px) 100vw, 400px" /><figcaption id="caption-attachment-426935" class="wp-caption-text">Cat scale uses a load sensor under each corner of the platform</figcaption></figure>
+<p>The multi-faceted system involving a scale to weight the cat, a food hopper with dispenser, and a scale for the food bowl. The cat has to stand on the scale to eat, and the dispenser doles out some food when it detects this. It identifies each cat by weight, and controls the quantity dispensed accordingly to spread that cat&#8217;s allotted diet over the course of the day.</p>
+<p>Behind it all is an ESP32, which delivers the stats to a web interface and makes them available for import to a database. He&#8217;s identified a flaw in the system, that two cats of the same weight could cause misidentification. To that end he has an RFID reader under way, but it&#8217;s still a work in progress. There is even <a href="https://www.youtube.com/channel/UC91dBCCF5MRUt8zm8YhqT_g" target="_blank">a live stream of the unit in action</a>.</p>
+<p>We&#8217;re suckers for cats here, and while the various Hackaday Cats provide plenty of companionship and entertainment we&#8217;re always up for more. Over the years we&#8217;ve featured plenty of cat feeders, but <a href="https://hackaday.com/2011/08/29/a-cat-elevator-for-the-discerning-lazy-feline-in-your-life/">only one cat elevator</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://hackaday.com/2020/08/13/automatic-cat-weighing-machine-knows-which-pet-it-is-feeding/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">425431</post-id>	</item>
+		<item>
+		<title>Tensile Testing Machine Takes 3D Printed Parts to the Breaking Point</title>
+		<link>https://hackaday.com/2020/08/13/tensile-testing-machine-takes-3d-printed-parts-to-the-breaking-point/</link>
+					<comments>https://hackaday.com/2020/08/13/tensile-testing-machine-takes-3d-printed-parts-to-the-breaking-point/#comments</comments>
+		
+		<dc:creator><![CDATA[Lewin Day]]></dc:creator>
+		<pubDate>Thu, 13 Aug 2020 23:01:13 +0000</pubDate>
+				<category><![CDATA[3d Printer hacks]]></category>
+		<category><![CDATA[Tool Hacks]]></category>
+		<category><![CDATA[load cell]]></category>
+		<category><![CDATA[tensile strength]]></category>
+		<guid isPermaLink="false">https://hackaday.com/?p=426188</guid>
+
+					<description><![CDATA[<p>If you&#8217;re serious about engineering the things you build, you need to know the limits of the materials you&#8217;re working with. One of important way to characterize materials is to test the tensile strength &#8212; how much force it takes to pull a sample to the breaking point. Thankfully, with  <a href="https://hackaday.com/2020/08/13/tensile-testing-machine-takes-3d-printed-parts-to-the-breaking-point/" class="read_more">&#8230;read more</a></p>]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;re serious about engineering the things you build, you need to know the limits of the materials you&#8217;re working with. One of important way to characterize materials is to test the tensile strength &#8212; how much force it takes to pull a sample to the breaking point. Thankfully, with the right hardware, this is easy to measure and  <a href="https://www.instructables.com/id/FULLY-FUNCTIONAL-Tensile-Testing-Machine-Tinkercad/" target="_blank">[CrazyBlackStone] has built a rig to do just that</a>.</p>
+<p>Built on a frame of aluminium extrusion, a set of 3D printed parts to hold everything in place. To apply the load, a stepper motor is used to slowly turn a leadscrew, pulling on the article under test. Tensile forces are measured with a load cell hooked up to an Arduino, which reports the data back to a PC over its USB serial connection.</p>
+<p><img data-attachment-id="426193" data-permalink="https://hackaday.com/2020/08/13/tensile-testing-machine-takes-3d-printed-parts-to-the-breaking-point/tensiletest890/" data-orig-file="https://hackaday.com/wp-content/uploads/2020/08/tensiletest890.jpg" data-orig-size="800,250" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="tensiletest890" data-image-description="" data-medium-file="https://hackaday.com/wp-content/uploads/2020/08/tensiletest890.jpg?w=400" data-large-file="https://hackaday.com/wp-content/uploads/2020/08/tensiletest890.jpg?w=800" class="aligncenter size-large wp-image-426193" src="https://hackaday.com/wp-content/uploads/2020/08/tensiletest890.jpg?w=800" alt="" width="800" height="250" srcset="https://hackaday.com/wp-content/uploads/2020/08/tensiletest890.jpg 800w, https://hackaday.com/wp-content/uploads/2020/08/tensiletest890.jpg?resize=250,78 250w, https://hackaday.com/wp-content/uploads/2020/08/tensiletest890.jpg?resize=400,125 400w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>It&#8217;s a straightforward way to build your first tensile tester, and would be perfect for testing 3D printed parts for strength. The STEP files (13.4 MB <a href="https://content.instructables.com/ORIG/FLM/51XT/KD33H42P/FLM51XTKD33H42P.step" target="_blank">direct download</a>) for this project are available, but [CrazyBlackStone] recommends waiting for version two which will be published this fall on Thingiverse although we didn&#8217;t find a link to that user profile.</p>
+<p>Now we&#8217;ll be able to measure tensile strength, but the stiffness of parts is also important. <a href="https://hackaday.com/2018/10/12/measuring-the-stiffness-of-3d-printed-parts/">You might consider building a rig to test that as well.</a> Video after the break.</p>
+<p><span id="more-426188"></span></p>
+<p><iframe class='youtube-player' width='800' height='480' src='https://www.youtube.com/embed/MU99hTOaAwI?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://hackaday.com/2020/08/13/tensile-testing-machine-takes-3d-printed-parts-to-the-breaking-point/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">426188</post-id>	</item>
+		<item>
+		<title>Gaze Inside the Valve Index VR Headset in Detailed Teardown</title>
+		<link>https://hackaday.com/2020/08/13/gaze-inside-the-valve-index-vr-headset-in-detailed-teardown/</link>
+					<comments>https://hackaday.com/2020/08/13/gaze-inside-the-valve-index-vr-headset-in-detailed-teardown/#comments</comments>
+		
+		<dc:creator><![CDATA[Donald Papp]]></dc:creator>
+		<pubDate>Thu, 13 Aug 2020 20:01:47 +0000</pubDate>
+				<category><![CDATA[Teardown]]></category>
+		<category><![CDATA[Virtual Reality]]></category>
+		<category><![CDATA[hmd]]></category>
+		<category><![CDATA[teardown]]></category>
+		<category><![CDATA[valve index]]></category>
+		<category><![CDATA[virtual reality]]></category>
+		<category><![CDATA[vr]]></category>
+		<guid isPermaLink="false">https://hackaday.com/?p=426841</guid>
+
+					<description><![CDATA[<p>Want to see what exactly is inside the $500 (headset only price) Valve Index VR headset that was released last summer? Take a look at this teardown by [Ilja Zegars]. Not only does [Ilja] pull the device apart, but he identifies each IC and takes care to point out some  <a href="https://hackaday.com/2020/08/13/gaze-inside-the-valve-index-vr-headset-in-detailed-teardown/" class="read_more">&#8230;read more</a></p>]]></description>
+										<content:encoded><![CDATA[<figure id="attachment_426851" aria-describedby="caption-attachment-426851" style="width: 250px" class="wp-caption alignright"><a href="https://hackaday.com/wp-content/uploads/2020/08/Valve-Index-Multilayer-Lenses.jpg" target="_blank"><img data-attachment-id="426851" data-permalink="https://hackaday.com/2020/08/13/gaze-inside-the-valve-index-vr-headset-in-detailed-teardown/valve-index-multilayer-lenses/" data-orig-file="https://hackaday.com/wp-content/uploads/2020/08/Valve-Index-Multilayer-Lenses.jpg" data-orig-size="629,629" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Valve Index Multilayer Lenses" data-image-description="" data-medium-file="https://hackaday.com/wp-content/uploads/2020/08/Valve-Index-Multilayer-Lenses.jpg?w=400" data-large-file="https://hackaday.com/wp-content/uploads/2020/08/Valve-Index-Multilayer-Lenses.jpg?w=625" class="wp-image-426851 size-thumbnail" src="https://hackaday.com/wp-content/uploads/2020/08/Valve-Index-Multilayer-Lenses.jpg?w=250" alt="" width="250" height="250" srcset="https://hackaday.com/wp-content/uploads/2020/08/Valve-Index-Multilayer-Lenses.jpg 629w, https://hackaday.com/wp-content/uploads/2020/08/Valve-Index-Multilayer-Lenses.jpg?resize=250,250 250w, https://hackaday.com/wp-content/uploads/2020/08/Valve-Index-Multilayer-Lenses.jpg?resize=400,400 400w, https://hackaday.com/wp-content/uploads/2020/08/Valve-Index-Multilayer-Lenses.jpg?resize=625,625 625w" sizes="(max-width: 250px) 100vw, 250px" /></a><figcaption id="caption-attachment-426851" class="wp-caption-text">Valve&#8217;s unique multilayer lenses are far thinner than one might expect.</figcaption></figure>
+<p>Want to see what exactly is inside the $500 (headset only price) Valve Index VR headset that was released last summer? <a href="https://www.thevrist.com/indexteardown" target="_blank">Take a look at this teardown</a> by [Ilja Zegars]. Not only does [Ilja] pull the device apart, but he identifies each IC and takes care to point out some of the more unique hardware aspects like the fancy diffuser on the displays, and the unique multilayered lenses (which are much thinner than one might expect.)</p>
+<p>[Ilja] is no stranger to headset hardware design, and in addition to all the eye candy of high-res photographs, provides some insightful commentary to help make sense of them. The &#8220;tracking webs&#8221; pulled from the headset are an interesting bit, each is a long run of flexible PCB that connects four tracking sensors for each side of the head-mounted display back to the main PCB. These sensors are basically IR photodiodes, and detect the regular laser sweeps emitted by the base stations of <a href="https://hackaday.com/2015/05/18/an-introduction-to-valves-tracking-hardware/">Valve&#8217;s lighthouse tracking technology</a>. [Ilja] also gives us a good look at the rod and spring mechanisms seen above that adjust distance between the two screens.</p>
+<p>Want more? [Ilja] also has <a href="https://photos.app.goo.gl/dhuPVWTu6P5XWo4HA" target="_blank">a gallery of high-resolution images</a> available for those you who fancy a closer look. Also, if you missed it, we covered an examination of the Index&#8217;s optical design as part of <a href="https://hackaday.com/2019/06/21/everything-you-probably-didnt-know-about-fov-in-hmds/">everything you probably didn&#8217;t know about field of view in head-mounted displays</a>.</p>
+<p>[via <a href="https://twitter.com/GamerToTheEnd/status/1293669929611399168" target="_blank">Twitter</a>]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://hackaday.com/2020/08/13/gaze-inside-the-valve-index-vr-headset-in-detailed-teardown/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">426841</post-id>	</item>
+		<item>
+		<title>A High Torque Gearbox You Can Print At Home</title>
+		<link>https://hackaday.com/2020/08/13/a-high-torque-gearbox-you-can-print-at-home/</link>
+					<comments>https://hackaday.com/2020/08/13/a-high-torque-gearbox-you-can-print-at-home/#comments</comments>
+		
+		<dc:creator><![CDATA[Lewin Day]]></dc:creator>
+		<pubDate>Thu, 13 Aug 2020 18:31:04 +0000</pubDate>
+				<category><![CDATA[3d Printer hacks]]></category>
+		<category><![CDATA[The Hackaday Prize]]></category>
+		<category><![CDATA[2020 Hackaday Prize]]></category>
+		<category><![CDATA[3d printed]]></category>
+		<category><![CDATA[gearbox]]></category>
+		<guid isPermaLink="false">https://hackaday.com/?p=426328</guid>
+
+					<description><![CDATA[<p>Typically, when we think of 3D printed parts, we think of unique parts with complex geometries that would be hard to fabricate with other techniques. Strength is rarely the first thing that comes to mind, due to the limitations of thermoplastics and the problem of delamination between layers. However, with  <a href="https://hackaday.com/2020/08/13/a-high-torque-gearbox-you-can-print-at-home/" class="read_more">&#8230;read more</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Typically, when we think of 3D printed parts, we think of unique parts with complex geometries that would be hard to fabricate with other techniques. Strength is rarely the first thing that comes to mind, due to the limitations of thermoplastics and the problem of delamination between layers. However, with smart design, it&#8217;s possible to print parts capable of great feats, <a href="https://hackaday.io/project/173854-3d-printed-high-torque-servogearbox-version-2" target="_blank">just as [Brian]&#8217;s high-torque gearbox demonstrates.</a></p>
+<figure id="attachment_426334" aria-describedby="caption-attachment-426334" style="width: 250px" class="wp-caption alignright"><img data-attachment-id="426334" data-permalink="https://hackaday.com/2020/08/13/a-high-torque-gearbox-you-can-print-at-home/3dgbinlay/" data-orig-file="https://hackaday.com/wp-content/uploads/2020/08/3dgbinlay.jpg" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="3dgbinlay" data-image-description="" data-medium-file="https://hackaday.com/wp-content/uploads/2020/08/3dgbinlay.jpg?w=400" data-large-file="https://hackaday.com/wp-content/uploads/2020/08/3dgbinlay.jpg?w=800" class="wp-image-426334 size-thumbnail" src="https://hackaday.com/wp-content/uploads/2020/08/3dgbinlay.jpg?w=250" alt="" width="250" height="141" srcset="https://hackaday.com/wp-content/uploads/2020/08/3dgbinlay.jpg 1920w, https://hackaday.com/wp-content/uploads/2020/08/3dgbinlay.jpg?resize=250,141 250w, https://hackaday.com/wp-content/uploads/2020/08/3dgbinlay.jpg?resize=400,225 400w, https://hackaday.com/wp-content/uploads/2020/08/3dgbinlay.jpg?resize=800,450 800w, https://hackaday.com/wp-content/uploads/2020/08/3dgbinlay.jpg?resize=1536,864 1536w" sizes="(max-width: 250px) 100vw, 250px" /><figcaption id="caption-attachment-426334" class="wp-caption-text">Pulling a car is a great way to show off the strength of your build.</figcaption></figure>
+<p>The gearbox consists of entirely 3D-printed gears, along with the enclosure, with the only metal parts being a few bearings and shafts. Capable of being produced out of PLA on a regular FDM printer, [Brian] has successfully tested the gearbox up to 132 kg∗cm. The suspicion is that there may be more left in it, but some slippage was noticed in the gear train when trying to tow a Ford Focus with the handbrake still on.</p>
+<p>Even better, with the addition of a potentiometer, the gearbox can be used as an incredibly tough servo. [Brian] demonstrates this by lifting 22 kg at a distance of 6 cm from the center of the output shaft. The servo does it with ease, though eventually falls off the bench due to not being held down properly.</p>
+<p>It&#8217;s a build that shows it&#8217;s possible to use 3D-printed parts to do some decently heavy work in the real world, as long as you design appropriately. [Brian] does a great job of explaining what&#8217;s involved, discussing gear profile selection and other design choices that affect the final performance. <a href="https://hackaday.com/2017/07/27/3d-printed-gearbox-lifts-an-anvil-with-ease/">We&#8217;ve seen similar work from others before, too.</a> Video after the break.</p>
+<p><span id="more-426328"></span></p>
+<p><iframe class='youtube-player' width='800' height='480' src='https://www.youtube.com/embed/d8us3OWgS1A?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></p>
+<p>&nbsp;</p>
+<p><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;&lt;div id=&quot;sidebar-mobile-1&quot; class=&quot;widget_text widget widget_custom_html amr_widget&quot;&gt;&lt;div class=&quot;textwidget custom-html-widget&quot;&gt;&lt;div style=&quot;text-align: center; font-size: 24px; font-weight: 300; margin-top: 12px;&quot;&gt;
+	The &lt;a href=&quot;https://prize.supplyframe.com&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;&lt;span
+			style=&quot;font-weight: bold;&quot;&gt;Hackaday&lt;/span&gt;Prize2020&lt;/a&gt; is Sponsored by:
+&lt;/div&gt;
+&lt;div class=&quot;prize-footer-2020&quot;&gt;
+	&lt;a href=&quot;https://supplyframe.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+		&lt;img src=&quot;https://hackaday.com/wp-content/uploads/2020/05/hackaday-prize2020-sponsors-supplyframe.png?w=300&quot;
+			alt=&quot;Supplyframe&quot; style=&quot;width:auto; height:100%;&quot; /&gt;
+	&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;prize-footer-2020&quot;&gt;
+	&lt;a href=&quot;https://www.digikey.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+		&lt;img src=&quot;https://hackaday.com/wp-content/uploads/2020/05/hackaday-prize2020-sponsors-digi-key.png?w=300&quot;
+			alt=&quot;Digi-Key&quot; style=&quot;width:auto; height:100%;&quot; /&gt;
+	&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;prize-footer-2020&quot;&gt;
+	&lt;a href=&quot;https://www.microchip.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+		&lt;img src=&quot;https://hackaday.com/wp-content/uploads/2020/05/hackaday-prize2020-sponsors-microchip.png?w=300&quot;
+			alt=&quot;Microchip&quot; style=&quot;width:auto; height:100%;&quot; /&gt;
+	&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;prize-footer-2020&quot;&gt;
+	&lt;a href=&quot;https://www.arm.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+		&lt;img src=&quot;https://hackaday.com/wp-content/uploads/2020/05/hackaday-prize2020-sponsors-arm.png?w=300&quot;
+			alt=&quot;Arm&quot; style=&quot;width:auto; height:100%;&quot; /&gt;
+	&lt;/a&gt;&lt;/div&gt;
+&lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&quot;}" data-sheets-userformat="{&quot;2&quot;:515,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:16776960},&quot;12&quot;:0}"><div id="sidebar-mobile-1" class="widget_text widget widget_custom_html amr_widget"><div class="textwidget custom-html-widget"><div style="text-align: center; font-size: 24px; font-weight: 300; margin-top: 12px;">
+	The <a href="https://prize.supplyframe.com" target="_blank" rel="noopener noreferrer"><span
+			style="font-weight: bold;">Hackaday</span>Prize2020</a> is Sponsored by:
+</div>
+<div class="prize-footer-2020">
+	<a href="https://supplyframe.com/" target="_blank" rel="noopener noreferrer">
+		<img src="https://hackaday.com/wp-content/uploads/2020/05/hackaday-prize2020-sponsors-supplyframe.png?w=300"
+			alt="Supplyframe" style="width:auto; height:100%;" />
+	</a></div>
+<div class="prize-footer-2020">
+	<a href="https://www.digikey.com/" target="_blank" rel="noopener noreferrer">
+		<img src="https://hackaday.com/wp-content/uploads/2020/05/hackaday-prize2020-sponsors-digi-key.png?w=300"
+			alt="Digi-Key" style="width:auto; height:100%;" />
+	</a></div>
+<div class="prize-footer-2020">
+	<a href="https://www.microchip.com/" target="_blank" rel="noopener noreferrer">
+		<img src="https://hackaday.com/wp-content/uploads/2020/05/hackaday-prize2020-sponsors-microchip.png?w=300"
+			alt="Microchip" style="width:auto; height:100%;" />
+	</a></div>
+<div class="prize-footer-2020">
+	<a href="https://www.arm.com/" target="_blank" rel="noopener noreferrer">
+		<img src="https://hackaday.com/wp-content/uploads/2020/05/hackaday-prize2020-sponsors-arm.png?w=300"
+			alt="Arm" style="width:auto; height:100%;" />
+	</a></div>
+<div style="clear: both;"></div></div></div></span></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://hackaday.com/2020/08/13/a-high-torque-gearbox-you-can-print-at-home/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">426328</post-id>	</item>
+		<item>
+		<title>A Tetraquark for Muster Mark!</title>
+		<link>https://hackaday.com/2020/08/13/a-tetraquark-for-muster-mark/</link>
+					<comments>https://hackaday.com/2020/08/13/a-tetraquark-for-muster-mark/#comments</comments>
+		
+		<dc:creator><![CDATA[Moritz v. Sivers]]></dc:creator>
+		<pubDate>Thu, 13 Aug 2020 17:00:06 +0000</pubDate>
+				<category><![CDATA[Hackaday Columns]]></category>
+		<category><![CDATA[Science]]></category>
+		<category><![CDATA[lhc]]></category>
+		<category><![CDATA[LHCb]]></category>
+		<category><![CDATA[nuclear physics]]></category>
+		<category><![CDATA[pentaquark]]></category>
+		<category><![CDATA[quark]]></category>
+		<category><![CDATA[strong force]]></category>
+		<category><![CDATA[subatomic particle]]></category>
+		<category><![CDATA[tetraquark]]></category>
+		<guid isPermaLink="false">https://hackaday.com/?p=424049</guid>
+
+					<description><![CDATA[<p>The holy grail of every particle physics experiment is the discovery of a new particle. Finding a new constituent of matter may earn you eternal glory within the history of physics. Unfortunately, since the last missing piece of the Standard Model, the Higgs boson, was discovered in 2012, and with  <a href="https://hackaday.com/2020/08/13/a-tetraquark-for-muster-mark/" class="read_more">&#8230;read more</a></p>]]></description>
+										<content:encoded><![CDATA[<p>The holy grail of every particle physics experiment is the discovery of a new particle. Finding a new constituent of matter may earn you eternal glory within the history of physics. Unfortunately, since the last missing piece of the Standard Model, the Higgs boson, was discovered in 2012, and with still no clue about the nature of dark matter and dark energy, there is not much hope to stumble upon a new fundamental building block of matter any time soon.</p>
+<p>Luckily, this is not true for composite particles, especially the strange world of quark matter still yields some potential for new discoveries. The latest of such was the <a href="https://arxiv.org/abs/2006.16957" target="_blank">observation of a new tetraquark by the LHCb experiment.</a> But what the hell is a quark anyway and why is it named after a German dairy product?<span id="more-424049"></span></p>
+<h2>The Proton Is Not Just a Dot</h2>
+<p>Up until the 1950s, it was believed that subatomic particles such as the neutron and proton are elementary, point-like particles with no inner structure. In the following decade, the <a href="https://hackaday.com/2020/07/29/smashing-the-atom-a-brief-history-of-particle-accelerators/">progress made by accelerator experiments</a> led to the discovery of an entire zoo of new particles. This sudden &#8220;particle explosion&#8221; irritated physicists who believed in the beauty of simplicity. Wolfgang Pauli exclaimed that had he foreseen this, he would have become a botanist instead. US physicist Willis Lamb suggested that the discovery of a new particle now ought to be punished with $10,000 fine instead of a Nobel Prize.</p>
+<p>In 1964, Murray Gell-Mann and George Zweig independently came up with a model proposing that these new particles are not elementary but instead composed of a combination of new fundamental particles called quarks. The name was coined by Gell-Mann who pronounced it &#8220;kwork&#8221; and later adopted the spelling from the following cryptic line in James Joyce&#8217;s book <em>Finnegans Wake</em>.</p>
+<blockquote><p>Three quarks for Muster Mark!</p>
+<p>Sure he has not got much of a bark</p>
+<p>And sure any he has it’s all beside the mark.</p></blockquote>
+<p>While Gell-Mann interpreted the line as a call for drinks (&#8220;Three quarts for Mister…&#8221;) it is unclear what James Joyce really meant. Some think it represents the cry of a seagull while others attribute it to the German word for a <a href="https://en.wikipedia.org/wiki/Quark_(dairy_product)" target="_blank">kind of cottage cheese</a>.</p>
+<p>Definitive proof for the existence of quarks came in 1968 when experiments at the Stanford Linear Accelerator Center showed that the proton is not a point-like particle but instead contains some inner structure. Still, people only recognized later that what they observed were in fact quarks.</p>
+<h2>A Quark Comes Rarely Alone</h2>
+<figure id="attachment_424052" aria-describedby="caption-attachment-424052" style="width: 400px" class="wp-caption alignright"><img data-attachment-id="424052" data-permalink="https://hackaday.com/2020/08/13/a-tetraquark-for-muster-mark/627px-standard_model_of_elementary_particles-svg-2/" data-orig-file="https://hackaday.com/wp-content/uploads/2020/07/627px-Standard_Model_of_Elementary_Particles.svg_-1.png" data-orig-size="627,600" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="627px-Standard_Model_of_Elementary_Particles.svg" data-image-description="" data-medium-file="https://hackaday.com/wp-content/uploads/2020/07/627px-Standard_Model_of_Elementary_Particles.svg_-1.png?w=400" data-large-file="https://hackaday.com/wp-content/uploads/2020/07/627px-Standard_Model_of_Elementary_Particles.svg_-1.png?w=627" class="wp-image-424052 size-medium" src="https://hackaday.com/wp-content/uploads/2020/07/627px-Standard_Model_of_Elementary_Particles.svg_-1.png?w=400" alt="" width="400" height="383" srcset="https://hackaday.com/wp-content/uploads/2020/07/627px-Standard_Model_of_Elementary_Particles.svg_-1.png 627w, https://hackaday.com/wp-content/uploads/2020/07/627px-Standard_Model_of_Elementary_Particles.svg_-1.png?resize=250,239 250w, https://hackaday.com/wp-content/uploads/2020/07/627px-Standard_Model_of_Elementary_Particles.svg_-1.png?resize=400,383 400w" sizes="(max-width: 400px) 100vw, 400px" /><figcaption id="caption-attachment-424052" class="wp-caption-text">Credit: <a href="https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg" target="_blank">MissMJ, Cush</a></figcaption></figure>
+<p>There are six different kinds of quarks (up, down, top, bottom, strange, charm) that have different masses and charges. For every quark there is also an antiparticle with the same mass but opposite charge. The proton, for example, consists of two up quarks (u) with charge +2/3 and one down quark (d) with charge -1/3, while a neutron consists of two down quarks and one up quark.</p>
+<p>Like the electric force that acts on charged particles, each quark contains a color charge blue, green, or red, which makes it susceptible to the strong force. In nature, one can only observe color-neutral particles that consist either of three quarks with different colors (called baryons), or a quark-antiquark pair (called mesons).</p>
+<p>The fact that one cannot produce isolated quarks is known as confinement. It can be understood as a peculiarity of the strong force that behaves similar to a rubber band. When trying to separate two quarks it becomes more and more difficult with increasing distance so that at some point it is energetically more favorable to create another quark-antiquark pair.</p>
+<h2>Tetraquarks and Pentaquarks</h2>
+<figure id="attachment_424954" aria-describedby="caption-attachment-424954" style="width: 400px" class="wp-caption alignright"><img data-attachment-id="424954" data-permalink="https://hackaday.com/2020/08/13/a-tetraquark-for-muster-mark/tcccc/" data-orig-file="https://hackaday.com/wp-content/uploads/2020/07/Tcccc.png" data-orig-size="491,313" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Tcccc" data-image-description="" data-medium-file="https://hackaday.com/wp-content/uploads/2020/07/Tcccc.png?w=400" data-large-file="https://hackaday.com/wp-content/uploads/2020/07/Tcccc.png?w=491" class="wp-image-424954 size-medium" src="https://hackaday.com/wp-content/uploads/2020/07/Tcccc.png?w=400" alt="" width="400" height="255" srcset="https://hackaday.com/wp-content/uploads/2020/07/Tcccc.png 491w, https://hackaday.com/wp-content/uploads/2020/07/Tcccc.png?resize=250,159 250w, https://hackaday.com/wp-content/uploads/2020/07/Tcccc.png?resize=400,255 400w" sizes="(max-width: 400px) 100vw, 400px" /><figcaption id="caption-attachment-424954" class="wp-caption-text">Invariant mass spectrum of J/ψ pairs measured by LHCb. The narrow peak slightly below 7000 MeV corresponds to the newly discovered tetraquark. <br />Credit: <a href="https://arxiv.org/abs/2006.16957" target="_blank">LHCb collaboration</a></figcaption></figure>
+<p>Baryons and mesons are not the only possibilities to combine quarks in a color-neutral way. A tetraquark is also viable, being a combination of four quarks qq<span style="text-decoration: overline;">qq</span>, where q and <span style="text-decoration: overline;">q</span> respectively refer to a quark and antiquark. A pentaquark qqqq<span style="text-decoration: overline;">q</span> may even exist.</p>
+<p>To search for penta- and tetraquarks one smashes together electrons or protons in an accelerator and analyses the particles produced in the collisions. Since such exotic particles have extremely short lifetimes, they cannot be directly observed in a detector. Instead one plots the number of recorded events vs. the so-called invariant mass, calculated from the energy and momentum of the final decay products. In this plot, a short-lived intermediate particle shows up as a narrow resonance peak. The position of the peak equals the mass of the particle while the width is inversely proportional to its lifetime.</p>
+<p>The first indication for the existence of a tetraquark came <a href="https://arxiv.org/abs/hep-ex/0308029" target="_blank">in 2003 from the BELLE experiment in Japan.</a> In the same year, another Japanese experiment called <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91.012002" target="_blank">SLEP maybe saw a pentaquark</a>. In the meantime, several penta- and tetraquarks have been unambiguously discovered. At the forefront of these discoveries was the LHCb experiment which <a href="https://arxiv.org/abs/1404.1903" target="_blank">confirmed the existence of a tetraquark in 2014</a> and one year later also <a href="https://arxiv.org/abs/1507.03414" target="_blank">discovered a pentaquark</a>. The tetraquark discovered recently by LHCb is special because it consists of two charm quarks and two charm antiquarks cc<span style="text-decoration: overline;">cc</span>. All other tetraquarks observed so far have at most two heavy quarks and none of them is made of more than two quarks of the same type.</p>
+<h2>Why Do We Even Care?</h2>
+<p>You may wonder why people go through the effort of hunting for these exotic particles. As with most particle physics experiments, it is all about a better understanding of the fundamental forces of nature, in this case, the strong force described by quantum chromodynamics (QCD). Calculating the properties of bound quarks is fairly complicated and so the measurement of these exotic particles helps to test different theoretical models. For example, it is unclear if all quarks in a tetra- and pentaquark are tightly bound together or if they form a molecule-like, loosely bound combination of baryons and mesons. Discovering more of these particles and measuring their properties could help to resolve this question.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://hackaday.com/2020/08/13/a-tetraquark-for-muster-mark/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">424049</post-id>	</item>
+	</channel>
+</rss>

@@ -1,11 +1,8 @@
 from threading import Thread
-from datetime import datetime
-from time import mktime
 
-import feedparser
 from terminaltables import SingleTable
 
-from devnews.entities import FeedEntry
+from devnews.repositories import FeedNewsRepository
 
 URLS = (
     "http://feeds.wired.com/wired/index",
@@ -28,46 +25,31 @@ PARSER_TIMEOUT = 10
 
 def get_news():
     threads = []
-    news = []
+    result = []
 
     for url in URLS:
-        thread = FeedParserThread(url, news)
+        thread = FeedParserThread(FeedNewsRepository(url), result)
         threads.append(thread)
         thread.start()
 
     for thread in threads:
         thread.join(timeout=PARSER_TIMEOUT)
 
-    return tuple(news)
+    return tuple(result)
 
 
 class FeedParserThread(Thread):
-    def __init__(self, url, news):
-        self.url, self.news = url, news
+    def __init__(self, repo, result):
+        self.repo, self.result = repo, result
 
         super().__init__()
 
     def run(self):
-        feed = feedparser.parse(self.url)
-        try:
-            feed_name = feed.feed.title
-        except AttributeError as e:
-            print(e, self.url, feed.feed)
-            raise
-
-        for entry in feed.entries:
-            feed_entry = FeedEntry(
-                feed_name,
-                entry.title,
-                entry.link,
-                entry.description,
-                datetime.fromtimestamp(mktime(entry.updated_parsed)),
-            )
-            self.news.append(feed_entry)
+        self.result.extend(self.repo.get_all())
 
 
 def print_table(news):
-    data = [(entry.feed_name, entry.title) for entry in news[:10]]
+    data = [(entry.source_name, entry.title) for entry in news[:10]]
     data.insert(0, ("Feed", "Title"))
     table = SingleTable(data)
     print(table.table)

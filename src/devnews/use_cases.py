@@ -40,6 +40,9 @@ class SearchNewsUseCase:
         list_use_case = ListNewsUseCase(*self.repositories)
         result = list_use_case.execute()
 
-        filtered_result = [article for article in result if q in article.title.lower()]
+        filtered_result = filter(lambda a: a.contains(self.parse_query(q)), result)
 
         return tuple(filtered_result)
+
+    def parse_query(self, q):
+        return set(q.lower().split())

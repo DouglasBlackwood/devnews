@@ -1,11 +1,21 @@
 import warnings
 
 
-def test_setup(use_case):
+def test_list_use_case(list_use_case):
     with warnings.catch_warnings():
         # Désactive temporairement les DeprecationWarnings émit par la lib
         # tierce feedparser
         warnings.simplefilter("ignore")
 
-        news = use_case.execute()
-        assert news
+        news = list_use_case.execute()
+        assert len(news) == 7
+
+
+def test_search_use_case(search_use_case):
+    with warnings.catch_warnings():
+        # Désactive temporairement les DeprecationWarnings émit par la lib
+        # tierce feedparser
+        warnings.simplefilter("ignore")
+
+        news = search_use_case.execute(q="3d")
+        assert len(news) == 1

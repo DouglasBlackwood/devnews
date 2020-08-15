@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from devnews.repositories import FeedNewsRepository
-from devnews.use_cases import ListNewsUseCase
+from devnews.use_cases import ListNewsUseCase, SearchNewsUseCase
 
 DATA_FILEPATH = Path(__file__).parent / "data"
 
@@ -14,5 +14,10 @@ def repo():
 
 
 @pytest.fixture
-def use_case(repo):
+def list_use_case(repo):
     return ListNewsUseCase(repo)
+
+
+@pytest.fixture
+def search_use_case(repo):
+    return SearchNewsUseCase(repo)

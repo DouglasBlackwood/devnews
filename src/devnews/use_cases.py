@@ -30,3 +30,16 @@ class FeedParserThread(Thread):
 
     def run(self):
         self.result.extend(self.repo.get_all())
+
+
+class SearchNewsUseCase:
+    def __init__(self, *repositories):
+        self.repositories = repositories
+
+    def execute(self, q):
+        list_use_case = ListNewsUseCase(*self.repositories)
+        result = list_use_case.execute()
+
+        filtered_result = [article for article in result if q in article.title.lower()]
+
+        return tuple(filtered_result)

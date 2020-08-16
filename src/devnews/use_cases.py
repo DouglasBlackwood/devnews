@@ -35,13 +35,9 @@ class FeedParserThread(Thread):
         self.result.extend(self.repo.get_all())
 
 
-class SearchNewsUseCase:
-    def __init__(self, *repositories):
-        self.repositories = repositories
-
+class SearchNewsUseCase(ListNewsUseCase):
     def execute(self, query):
-        list_use_case = ListNewsUseCase(*self.repositories)
-        result = list_use_case.execute()
+        result = super().execute()
 
         filtered_result = filter(lambda a: a.contains(self.parse(query)), result)
 

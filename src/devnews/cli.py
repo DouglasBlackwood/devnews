@@ -37,7 +37,7 @@ def list_news(query):
     data = [(entry.source_name, textwrap.fill(entry.title)) for entry in news[:10]]
     data.insert(0, ("Feed", "Title"))
     table = SingleTable(data)
-    print(table.table)
+    click.echo(table.table)
 
 
 if __name__ == '__main__':

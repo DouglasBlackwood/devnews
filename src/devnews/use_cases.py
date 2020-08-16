@@ -39,13 +39,16 @@ class SearchNewsUseCase:
     def __init__(self, *repositories):
         self.repositories = repositories
 
-    def execute(self, q):
+    def execute(self, query):
         list_use_case = ListNewsUseCase(*self.repositories)
         result = list_use_case.execute()
 
-        filtered_result = filter(lambda a: a.contains(self.parse_query(q)), result)
+        filtered_result = filter(lambda a: a.contains(self.parse(query)), result)
 
         return tuple(filtered_result)
 
-    def parse_query(self, q):
-        return set(q.lower().split())
+    def parse(self, query):
+        if hasattr(query, "split"):
+            return set(query.lower().split())
+        else:
+            return set(query)

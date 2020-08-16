@@ -10,6 +10,9 @@ def test_list_use_case(list_use_case):
         news = list_use_case.execute()
         assert len(news) == 7
 
+        expected_order = tuple(sorted(news, key=lambda a: a.updated_at, reverse=True))
+        assert news == expected_order
+
 
 def test_search_use_case(search_use_case):
     with warnings.catch_warnings():

@@ -26,8 +26,7 @@ URLS = (
 @click.command(options_metavar='<options>')
 @click.argument("query", nargs=-1, metavar='<query>')
 def list_news(query):
-    """
-        Recherche les dernières news
+    """ Recherche les dernières news
 
         <query> termes de recherche
     """

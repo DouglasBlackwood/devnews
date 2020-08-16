@@ -1,4 +1,7 @@
+import textwrap
+
 import click
+from terminaltables import SingleTable
 
 from devnews.repositories import FeedNewsRepository
 from devnews.use_cases import SearchNewsUseCase
@@ -27,8 +30,10 @@ def list_news(query):
     use_case = SearchNewsUseCase(*repositories)
     news = use_case.execute(query)
 
-    for article in news[:5]:
-        click.echo(article)
+    data = [(entry.source_name, textwrap.fill(entry.title)) for entry in news[:10]]
+    data.insert(0, ("Feed", "Title"))
+    table = SingleTable(data)
+    print(table.table)
 
 
 if __name__ == '__main__':

@@ -23,9 +23,14 @@ URLS = (
 )
 
 
-@click.command()
-@click.argument('query', nargs=-1)
+@click.command(options_metavar='<options>')
+@click.argument("query", nargs=-1, metavar='<query>')
 def list_news(query):
+    """
+        Recherche les dernières news
+
+        <query> termes de recherche
+    """
     repositories = [FeedNewsRepository(url) for url in URLS]
     use_case = SearchNewsUseCase(*repositories)
     news = use_case.execute(query)

@@ -23,3 +23,4 @@ def test_article():
     expected_search_words = set(("source", "title", "this", "is", "a", "description"))
     assert article.search_words == expected_search_words
     assert article.contains(expected_search_words)
+    assert article.wrapped_summary == "Title\nhttp://example.com"

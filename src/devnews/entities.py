@@ -1,3 +1,4 @@
+import textwrap
 from dataclasses import dataclass
 from datetime import datetime
 
@@ -21,3 +22,7 @@ class Article:
 
     def contains(self, words: set):
         return words.issubset(self.search_words)
+
+    @property
+    def wrapped_summary(self):
+        return textwrap.fill(self.title) + "\n" + self.link

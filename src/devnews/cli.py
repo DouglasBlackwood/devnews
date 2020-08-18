@@ -1,5 +1,3 @@
-import textwrap
-
 import click
 from terminaltables import SingleTable
 
@@ -34,7 +32,7 @@ def list_news(query):
     use_case = SearchNewsUseCase(*repositories)
     news = use_case.execute(query)
 
-    data = [(entry.source_name, textwrap.fill(entry.title)) for entry in news[:10]]
+    data = [(article.source_name, article.wrapped_summary) for article in news[:10]]
     data.insert(0, ("Feed", "Title"))
     table = SingleTable(data)
     click.echo(table.table)

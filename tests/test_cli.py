@@ -23,8 +23,8 @@ def test_list_news():
     assert result.exit_code == 0
 
     lines = result.output.split("\n")
-    assert len(lines) == 12
     assert "Feed" in lines[1]
     assert "Title" in lines[1]
     assert "Hackaday" in lines[3]
     assert "Moving Fridge Magnets Make for Unique Clock" in lines[3]
+    assert "https://hackaday.com/2020/08/14/moving-fridge-magnets-make-for-unique-clock/" in lines[4]

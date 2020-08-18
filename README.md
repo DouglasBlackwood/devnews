@@ -26,3 +26,10 @@ Installer poetry et télécharger le dépôt de l'application. Exécuter la comm
 ### Exécuter les tests
 
 	poetry run pytest
+
+
+
+## TODO
+
+- api connexion
+- pagination cli (click.echo_via_pager bug avec printtable)

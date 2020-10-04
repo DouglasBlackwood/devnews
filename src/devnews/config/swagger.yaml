@@ -1,0 +1,27 @@
+openapi: 3.0.3
+
+info:
+  title: Devnews
+  description: API de news pour les devs
+  contact:
+    name: Douglas Blackwood
+    email: douglas.blackwood@protonmail.com
+  version: 0.1.0
+
+paths:
+  /devnews:
+    get:
+      operationId: devnews.api.search_news
+      description: Retourne les dernières news
+      parameters:
+        - name: q
+          in: query
+          description: Termes de recherche
+          required: false
+          schema:
+            type: string
+          style: simple
+      responses:
+        '200':
+          description: Liste des dernières news
+

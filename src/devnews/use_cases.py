@@ -20,7 +20,7 @@ class ListNewsUseCase:
         for thread in threads:
             thread.join(timeout=PARSER_TIMEOUT)
 
-        result.sort(key=attrgetter('updated_at'), reverse=True)
+        result.sort(key=attrgetter("updated_at"), reverse=True)
 
         return tuple(result)
 

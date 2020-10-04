@@ -1,8 +1,13 @@
-import click
-from terminaltables import SingleTable
+from pathlib import Path
+from dataclasses import asdict
+
+import connexion
 
 from devnews.repositories import FeedNewsRepository
 from devnews.use_cases import SearchNewsUseCase
+
+APP_DIR = Path(__file__).parent
+CONFIG_DIR = APP_DIR / "config"
 
 URLS = (
     "http://feeds.wired.com/wired/index",
@@ -21,22 +26,16 @@ URLS = (
 )
 
 
-@click.command(options_metavar="<options>")
-@click.argument("query", nargs=-1, metavar="<query>")
-def list_news(query):
-    """ Recherche les dernières news
+def create_app():
+    app = connexion.App("Devnews", specification_dir=CONFIG_DIR)
+    app.add_api("swagger.yaml")
 
-        <query> termes de recherche
-    """
+    return app.app
+
+
+def search_news(q=""):
     repositories = [FeedNewsRepository(url) for url in URLS]
     use_case = SearchNewsUseCase(*repositories)
-    news = use_case.execute(query)
+    news = use_case.execute(q)
 
-    data = [(article.source_name, article.wrapped_summary) for article in news[:10]]
-    data.insert(0, ("Feed", "Title"))
-    table = SingleTable(data)
-    click.echo(table.table)
-
-
-if __name__ == "__main__":
-    list_news()
+    return {"news": [asdict(a) for a in news]}

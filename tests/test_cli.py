@@ -27,4 +27,7 @@ def test_list_news():
     assert "Title" in lines[1]
     assert "Hackaday" in lines[3]
     assert "Moving Fridge Magnets Make for Unique Clock" in lines[3]
-    assert "https://hackaday.com/2020/08/14/moving-fridge-magnets-make-for-unique-clock/" in lines[4]
+    assert (
+        "https://hackaday.com/2020/08/14/moving-fridge-magnets-make-for-unique-clock/"
+        in lines[4]
+    )

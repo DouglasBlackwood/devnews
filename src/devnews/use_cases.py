@@ -39,7 +39,7 @@ class SearchNewsUseCase(ListNewsUseCase):
     def execute(self, query):
         result = super().execute()
 
-        filtered_result = filter(lambda a: a.contains(self.parse(query)), result)
+        filtered_result = [a for a in result if a.contains(self.parse(query))]
 
         return tuple(filtered_result)
 

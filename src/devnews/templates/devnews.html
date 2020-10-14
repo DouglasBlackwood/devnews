@@ -1,0 +1,13 @@
+<!doctype html>
+<head>
+	<title>Devnews</title>
+</head>
+<body>
+	<h1>Devnews</h1>
+
+	<ul>
+		{% for article in articles %}
+		    <li>{{ article.title }}</li>
+		{% endfor %}
+	</ul>
+</body>

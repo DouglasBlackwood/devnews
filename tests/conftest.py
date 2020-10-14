@@ -5,6 +5,7 @@ import pytest
 from devnews.repositories import FeedNewsRepository
 from devnews.use_cases import ListNewsUseCase, SearchNewsUseCase
 import devnews.api
+import devnews.web
 
 DATA_FILEPATH = Path(__file__).parent / "data"
 
@@ -25,12 +26,19 @@ def search_use_case(repo):
 
 
 @pytest.fixture
-def flask_app():
+def api_app():
     # Patch la liste des URLS vers un fichier de test
     devnews.api.URLS = [DATA_FILEPATH]
     return devnews.api.create_app()
 
 
 @pytest.fixture
-def flask_client(flask_app):
-    return flask_app.test_client()
+def api_client(api_app):
+    return api_app.test_client()
+
+
+@pytest.fixture
+def web_client():
+    # Patch la liste des URLS vers un fichier de test
+    devnews.web.URLS = [DATA_FILEPATH]
+    return devnews.web.APP.test_client()

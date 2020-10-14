@@ -1,18 +1,13 @@
 import warnings
 
 
-def test_root(flask_client):
-    response = flask_client.get("/")
-    assert response.status_code == 404
-
-
 def test_get(flask_client):
     with warnings.catch_warnings():
         # Désactive temporairement les DeprecationWarnings émit par la lib
         # tierce feedparser
         warnings.simplefilter("ignore")
 
-        response = flask_client.get("/devnews")
+        response = flask_client.get("/api/devnews")
 
     assert response.status_code == 200
     assert "news" in response.json
@@ -29,7 +24,7 @@ def test_get_with_query(flask_client):
         # tierce feedparser
         warnings.simplefilter("ignore")
 
-        response = flask_client.get("/devnews?q=3d")
+        response = flask_client.get("/api/devnews?q=3d")
 
     assert response.status_code == 200
     assert "news" in response.json
@@ -49,7 +44,7 @@ def test_get_with_query2(flask_client):
         # tierce feedparser
         warnings.simplefilter("ignore")
 
-        response = flask_client.get("/devnews?q=3d+torque")
+        response = flask_client.get("/api/devnews?q=3d+torque")
 
     assert response.status_code == 200
     assert "news" in response.json

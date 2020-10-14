@@ -9,7 +9,7 @@ info:
   version: 0.1.0
 
 paths:
-  /devnews:
+  /api/devnews:
     get:
       operationId: devnews.api.search_news
       description: Retourne les dernières news

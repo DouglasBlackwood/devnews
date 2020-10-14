@@ -1,24 +1,17 @@
+import json
+from pathlib import Path
+
 import click
 from terminaltables import SingleTable
 
 from devnews.repositories import FeedNewsRepository
 from devnews.use_cases import SearchNewsUseCase
 
-URLS = (
-    "http://feeds.wired.com/wired/index",
-    "http://hackaday.com/feed/",
-    "http://news.ycombinator.com/rss",
-    "http://rss.slashdot.org/Slashdot/slashdot",
-    "http://feeds.dzone.com/home",
-    "http://www.engadget.com/rss.xml",
-    "http://www.reddit.com/r/gaming/.rss",
-    "http://www.reddit.com/r/geek/.rss",
-    "http://www.reddit.com/r/programming/.rss",
-    "http://www.reddit.com/r/science/.rss",
-    "http://www.reddit.com/r/scifi/.rss",
-    "http://www.reddit.com/r/technology/.rss",
-    "http://www.techmeme.com/index.xml",
-)
+APP_DIR = Path(__file__).parent
+CONFIG_DIR = APP_DIR / 'config'
+
+with open(CONFIG_DIR / 'urls.json') as json_file:
+    URLS = json.load(json_file)
 
 
 @click.command(options_metavar="<options>")

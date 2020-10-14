@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 from dataclasses import asdict
 
@@ -9,21 +10,8 @@ from devnews.use_cases import SearchNewsUseCase
 APP_DIR = Path(__file__).parent
 CONFIG_DIR = APP_DIR / "config"
 
-URLS = (
-    "http://feeds.wired.com/wired/index",
-    "http://hackaday.com/feed/",
-    "http://news.ycombinator.com/rss",
-    "http://rss.slashdot.org/Slashdot/slashdot",
-    "http://feeds.dzone.com/home",
-    "http://www.engadget.com/rss.xml",
-    "http://www.reddit.com/r/gaming/.rss",
-    "http://www.reddit.com/r/geek/.rss",
-    "http://www.reddit.com/r/programming/.rss",
-    "http://www.reddit.com/r/science/.rss",
-    "http://www.reddit.com/r/scifi/.rss",
-    "http://www.reddit.com/r/technology/.rss",
-    "http://www.techmeme.com/index.xml",
-)
+with open(CONFIG_DIR / 'urls.json') as json_file:
+    URLS = json.load(json_file)
 
 
 def create_app():

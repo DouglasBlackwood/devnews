@@ -31,7 +31,6 @@ Installer poetry et télécharger le dépôt de l'application. Exécuter la comm
 
 ## TODO
 
-- factoriser api.urls et cli.urls dans un fichier de config
 - pagination cli (click.echo_via_pager bug avec printtable)
 - publier api
 - webapp news

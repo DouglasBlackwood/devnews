@@ -14,4 +14,4 @@ def test_web(web_client):
     assert b"<title>Devnews</title>" in response.data
     assert b"<h1>Devnews</h1>" in response.data
     assert b"Moving Fridge Magnets Make for Unique Clock" in response.data
-    assert b"<a href=\"https://hackaday.com/2020/08/14/moving-fridge-magnets-make-for-unique-clock/\">" in response.data
+    assert b"<a href=\"https://hackaday.com/2020/08/14/moving-fridge-magnets-make-for-unique-clock/\" target=\"_blank\">" in response.data

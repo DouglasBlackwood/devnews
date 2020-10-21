@@ -31,7 +31,7 @@ Installer poetry et télécharger le dépôt de l'application. Exécuter la comm
 
 ## TODO
 
-- webapp
 - mise en cache des news (fichier? sqlite?)
-- publier api + webapp
+- publier webapp
+- outil de filtre sur la webapp
 - pagination cli (click.echo_via_pager bug avec printtable)

@@ -16,7 +16,7 @@ with open(CONFIG_DIR / 'urls.json') as json_file:
 
 
 @APP.route('/devnews/')
-def hello_world():
+def devnews():
     repositories = [FeedNewsRepository(url) for url in URLS]
     use_case = ListNewsUseCase(*repositories)
     articles = use_case.execute()
